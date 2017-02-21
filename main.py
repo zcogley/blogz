@@ -23,7 +23,8 @@ class BlogHandler(webapp2.RequestHandler):
         return query.fetch(limit=limit, offset=offset)
 
         # TODO - filter the query so that only posts by the given user
-        return None
+        #query returns posts of the logged in user using any users' url. ok?
+        #return None
 
     def get_user_by_name(self, username):
         """ Get a user object from the db, based on their username """
